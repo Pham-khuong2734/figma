@@ -1,0 +1,163 @@
+.create {
+  width: 100%;
+}
+
+.wrapper-create {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrap-create,
+.img-create {
+  width: calc((100% - 60px) / 2);
+}
+
+.img-create-tablet,
+.img-create-mobile {
+  display: none;
+}
+
+.wrap-create {
+  padding: 100px 60px 100px 0;
+}
+
+.create-title {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 51px;
+  line-height: 110%;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.create-description {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 40px;
+  max-width: 460px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  background-color: #ffffff;
+  padding: 12px 20px;
+  width: 80%;
+  margin-bottom: 15px;
+  border: 1px solid #858584;
+  border-radius: 20px;
+  display: flex;
+}
+
+.icon-create {
+  margin-right: 12px;
+}
+
+.input {
+  outline: none;
+  border: none;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  width: 100%;
+  color: #2b2b2b;
+}
+
+.btn-create {
+  background: #a259ff;
+  border-radius: 20px;
+  padding: 12px 104.5px;
+  border: none;
+  color: #ffffff;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  width: 80%;
+  cursor: pointer;
+}
+
+.label:last-child {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1122px) {
+  .create-title {
+    font-size: 46px;
+  }
+  .create-description {
+    font-size: 18px;
+  }
+  .wrap-create {
+    padding: 80px 40px 80px 0;
+  }
+  .label,
+  .btn-create {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .img-create-tablet {
+    display: block;
+  }
+
+  .img-create-pc,
+  .img-create-mobile {
+    display: none;
+  }
+
+  .wrap-create,
+  .img-create {
+    width: calc((100% - 40px) / 2);
+  }
+
+  .create-title {
+    font-size: 38px;
+  }
+
+  .create-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper-create {
+    flex-direction: column;
+  }
+
+  .wrap-create,
+  .img-create {
+    width: 100%;
+  }
+
+  .img-create-mobile {
+    display: block;
+  }
+
+  .img-create-tablet,
+  .img-create-pc {
+    display: none;
+  }
+
+  .wrap-create {
+    padding: 30px 30px 40px;
+  }
+}

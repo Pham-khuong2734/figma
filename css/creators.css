@@ -1,0 +1,154 @@
+.trending-description {
+  margin-bottom: 0;
+}
+
+.creatos-content {
+  padding: 40px 0;
+}
+
+.tab-item {
+  width: 100%;
+  margin: 0;
+}
+
+.creatos-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  margin-top: 20px;
+  align-items: center;
+  background-color: #3b3b3b;
+  border-radius: 20px;
+  border: 1px solid #3b3b3b;
+}
+
+.creatos-item:first-child {
+  margin-top: 0;
+  background-color: #2b2b2b;
+}
+
+.creatos-wrap {
+  width: calc((100% - 60px) / 2);
+  display: flex;
+  align-items: center;
+}
+
+.creatos-img {
+  margin-right: 20px;
+}
+
+.creatos-images {
+  margin: 0 20px;
+}
+
+.creatos-text {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #858584;
+}
+
+.creatos-width {
+  width: calc((100% - 40px) / 3);
+}
+
+.index {
+  width: 30px;
+  height: 30px;
+  background: #2b2b2b;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #858584;
+}
+
+.creatos-text-dish {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.creatos-stats {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.creatos-stats:first-child {
+  color: #00ac4f;
+}
+
+.tab-text-mobile {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .header-browse {
+    padding: 40px 0;
+  }
+  .creatos-width:nth-child(2) {
+    display: none;
+  }
+  .dpl-f-jc-sb {
+    justify-content: flex-end;
+  }
+  /*  */
+  .creatos-text-dish,
+  .creatos-wrap:nth-child(1) {
+    width: max-content;
+  }
+  .creatos-images {
+    width: 24px;
+    height: 24px;
+    margin: 0 12px 0 20px;
+  }
+  .index {
+    background-color: #3b3b3b;
+    color: #858584;
+    width: max-content;
+  }
+  .creatos-text-dish {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tab-text {
+    margin: 0;
+  }
+  .tab-text-mobile {
+    display: block;
+  }
+  .tab-text-all {
+    display: none;
+  }
+  .creatos-width:first-child {
+    display: none;
+  }
+  .creatos-text-dish {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .creatos-width {
+    width: max-content;
+  }
+  .creatos-images {
+    width: 24px;
+    height: 24px;
+    margin: 0 12px 0 10px;
+  }
+  .creatos-text,
+  .creatos-stats,
+  .index {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,147 @@
+.connect {
+  width: 100%;
+}
+
+.wrapper-connect {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrap-connect,
+.img-connect {
+  width: calc((100% - 60px) / 2);
+}
+
+.img-connect-tablet,
+.img-connect-mobile {
+  display: none;
+}
+
+.wrap-connect {
+  padding: 100px 150px 100px 0;
+}
+
+.connect-title {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 51px;
+  line-height: 110%;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.connect-description {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  color: #ffffff;
+  margin-bottom: 40px;
+  max-width: 425px;
+}
+
+.list-connect {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-connect {
+  width: max-content;
+  padding: 20px 20px 20px 40px;
+  background-color: #3b3b3b;
+  border: 1px solid #a259ff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.item-connect img {
+  margin-right: 20px;
+}
+
+.item-connect span {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  text-transform: capitalize;
+  color: #ffffff;
+  width: 200px;
+  text-align: left;
+}
+
+@media (max-width: 1122px) {
+  .connect-title {
+    font-size: 46px;
+  }
+
+  .connect-description {
+    font-size: 18px;
+  }
+
+  .wrap-connect {
+    padding: 80px 40px 80px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .img-connect-tablet {
+    display: block;
+  }
+
+  .img-connect-pc,
+  .img-connect-mobile {
+    display: none;
+  }
+
+  .wrap-connect,
+  .img-connect {
+    width: calc((100% - 40px) / 2);
+  }
+
+  .connect-title {
+    font-size: 38px;
+  }
+
+  .connect-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .item-connect {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper-connect {
+    flex-direction: column;
+  }
+
+  .wrap-connect,
+  .img-connect {
+    width: 100%;
+  }
+
+  .img-connect-mobile {
+    display: block;
+  }
+
+  .img-connect-tablet,
+  .img-connect-pc {
+    display: none;
+  }
+
+  .wrap-connect {
+    padding: 30px 30px 40px;
+  }
+}

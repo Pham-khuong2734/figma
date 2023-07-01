@@ -1,0 +1,267 @@
+.banner {
+  width: 100%;
+}
+
+.img-banner {
+  width: 100%;
+  padding-bottom: 56px;
+}
+
+.img-avartar-discover {
+  position: absolute;
+  width: 120px;
+  z-index: 10;
+  left: 0;
+  bottom: 0;
+}
+
+.animakid {
+  padding: 40px 0;
+  border-bottom: 1px solid #3b3b3b;
+}
+
+.animakid-title {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 51px;
+  line-height: 110%;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.wrapper-animakid {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+}
+
+.btn-animakid {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #2b2b2b;
+  border: 1px solid #a259ff;
+  display: flex;
+  align-items: center;
+}
+
+.m-r-20 {
+  margin-right: 20px;
+}
+
+.btn-animakid img {
+  margin-right: 12px;
+}
+
+.bg-color-violet {
+  background-color: #a259ff;
+}
+
+.btn-animakid span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.total {
+  margin-bottom: 30px;
+}
+
+.animakid-text {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: #858584;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.bio-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.m-t-0 {
+  margin-top: 0;
+}
+
+.tab {
+  padding-top: 10px;
+}
+
+.tab-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tab-item {
+  padding: 20px 0;
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+}
+
+.tab-item:first-child {
+  border-bottom: 2px solid #858584;
+}
+
+.tab-text {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-right: 16px;
+}
+
+.tab-number {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 20px;
+  background: #3b3b3b;
+}
+
+.bg-color-grey {
+  background: #858584;
+}
+
+.discover-list {
+  padding: 80px 0;
+  background-color: #3b3b3b;
+  border-bottom: 2px solid #2b2b2b;
+}
+
+.bg-color {
+  background-color: #2b2b2b;
+}
+
+.discover-item {
+  margin-top: 0;
+}
+
+.discover-wrapper {
+  flex-wrap: wrap;
+}
+
+.discover-item:nth-child(7),
+.discover-item:nth-child(8),
+.discover-item:nth-child(9) {
+  margin-bottom: 0;
+}
+
+.discover-item {
+  margin-bottom: 30px;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 60px;
+}
+
+.position-relative h3 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 140%;
+  text-transform: capitalize;
+  color: #ffffff;
+  display: none;
+}
+
+.discover-item:nth-child(1) {
+  margin-top: 0;
+}
+
+@media (max-width: 992px) {
+  .animakid {
+    padding: 30px 0;
+  }
+  .wrapper-animakid {
+    position: static;
+  }
+  .animakid-title {
+    font-size: 38px;
+  }
+  .discover-item:nth-child(7),
+  .discover-item:nth-child(8),
+  .discover-item:nth-child(9) {
+    display: none;
+  }
+  .discover-item:nth-child(5),
+  .discover-item:nth-child(6) {
+    margin-bottom: 0;
+  }
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    flex-direction: row;
+  }
+  .discover {
+    padding: 40px 0;
+  }
+  .position-relative h3 {
+    display: block;
+  }
+  .tab-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tab-number {
+    display: none;
+  }
+  .discover-item {
+    margin: 0;
+  }
+  .animakid-title {
+    font-size: 28px;
+  }
+  .wrapper-animakid {
+    flex-direction: column;
+  }
+  .btn-animakid {
+    justify-content: center;
+  }
+  .btn-animakid:first-child {
+    margin: 0 0 20px 0;
+  }
+  .img-avartar-discover {
+    left: calc((100% - 120px) / 2);
+  }
+  .discover-item:nth-child(3),
+  .discover-item:nth-child(4),
+  .discover-item:nth-child(5),
+  .discover-item:nth-child(6) {
+    display: none;
+  }
+  .discover-item:nth-child(2) .content-img {
+    margin-bottom: 0;
+  }
+  .btn-animakid {
+    position: absolute;
+    bottom: -90px;
+    width: 100%;
+  }
+  .discover {
+    padding-bottom: 130px;
+  }
+}
